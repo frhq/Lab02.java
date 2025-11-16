@@ -1,0 +1,35 @@
+import java.util.Scanner; 
+
+public class LabTask3  { 
+      public static void main(String[] args)  { 
+        Scanner console = new Scanner(System.in); 
+
+          final int SECRET = 11; 
+          final double RATE = 12.50; 
+          int num1,num2, newNum; 
+          String name; 
+          double hoursWorked, wages; 
+
+            System.out.print("Enter two numbers seperated by space:"); 
+            num1 = console.nextInt(); 
+            num2 = console.nextInt(); 
+            System.out.println("The value in num1 = " + num1); 
+            System.out.println("The value in num2 = " + num2); 
+            newNum = (num1 * 2) + num2; 
+            System.out.println("the value of newNum = " + newNum); 
+
+              newNum = newNum + SECRET; 
+              System.out.println("The value of new newNum = " + newNum); 
+              System.out.print("Enter your lastname: "); 
+              name = console.next(); 
+                
+               System.out.print("Enter the hours worked (0 - 70):"); 
+               hoursWorked = console.nextDouble(); 
+               wages = RATE * hoursWorked; 
+
+                    System.out.println("Name: " + name); 
+                    System.out.println("Pay rate:  $" + RATE); 
+                    System.out.println("hoursWoked: " + hoursWorked); 
+                    System.out.println("Salary: $" + wages); 
+            } 
+} 
